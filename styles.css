@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+code {
+  font-family: monospace;
+}
+
+nav header {
+  font-size: 1.5rem;
+  padding: 10px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+main header {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 20px ;
+}
+
+a {
+  display: block;
+}
+
+body {
+  height: 4400px;
+}
+
+#navbar {
+  position: fixed;
+  width: 380px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #f7f7f7;
+  border-right: 2px solid gray;
+}
+
+#navbar a {
+  padding: 10px;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  width: 60%;
+  margin-left: 400px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 0 10px;
+  padding-bottom: 24px;
+  border-radius: 5px;
+}
+
+#References a {
+  color: #66b2ff;
+  padding: 5px 0;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  main {
+    padding-top: 80px;
+    width: 100%;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: none;
+  }
+  
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    width: 100%;
+  }
+}
